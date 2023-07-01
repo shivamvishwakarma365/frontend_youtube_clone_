@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Home Page</title>
+    <link rel="stylesheet" href="cs/individual_video.css" />
+    <link rel="stylesheet" href="cs/index.css" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img onclick="showData()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlHMUb8U4VeW2y-RflH7U7Yp0tsx1hJv0PwQ&usqp=CAU" class="logo" alt="" >
+        <div class="search-box">
+            <input type="text" class="search-bar" placeholder="search" id="search">
+            <button class="search-btn"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png" alt=""></button>
+        </div>
+        <div class="user-options">
+            <img src="https://cdn.icon-icons.com/icons2/2770/PNG/512/camera_video_icon_176703.png" class="icon" alt="">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJFBMVEX///8AAAD8/PyWlpaamprS0tLPz8/KysqRkZHn5+ePj4/09PQYH3+zAAABJklEQVR4nO3cyw6DIBRFUeujiP7//3bQIaTeGEgMXWt+QnaHWpwmAAAAAAAAAIBnSftybS93+QjsjlwOQ+elhoXLK2Iudu/Qbit2c2i3NCxcbxZuXQtXhQoVKlSoUKFChQoVKlSoUKFChQoVKlSoUKFChQoVKlSosOLue/y+hS3f488hd4ctDwQAAAB+ye+IcnemwCyd5TB0XuWexm1971uUP437Fl+eJipUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChwprx3+OP/18MAAAA+A/jf1Nh/O9ijP+sTaFChQoVKlSoUKFChQoVKlSoUKFChQoVKlSoUKFChQoVjlPY977FE97jp325tpe7fAR2R+XeROi81LAQAAAAAAAAAKCFD6iuRBBlbFhbAAAAAElFTkSuQmCC" class="icon" alt="">
+            <img src="https://www.svgrepo.com/show/31480/notification-bell.svg" class="icon" alt="">
+            <div class="user-dp">
+                <img src="https://pixlok.com/wp-content/uploads/2021/10/User-Profile-Icon-9mces.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <div class="side-bar">
+        <a onclick="showData()" class="links active"><img src="Images/home.PNG" alt="">home</a>
+        <a href="https://www.youtube.com/shorts/z9wlZl3dbC0" class="links"><img src="Images/explore.PNG" alt="">Shorts</a>
+        <a href="https://www.youtube.com/feed/subscriptions" class="links"><img src="Images/subscription.PNG" alt="">subscription</a>
+
+        <hr class="seperator">
+        <a href="https://www.youtube.com/feed/library" class="links"><img src="Images/library.PNG" alt="">library</a>
+        <a href="https://www.youtube.com/feed/history" class="links"><img src="Images/history.PNG" alt="">history</a>
+        <a href="https://studio.youtube.com/channel/UCUsDCWuAM-AoUEqHVp4MpoA/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D" class="links"><img src="Images/your-video.PNG" alt="">your video</a>
+        <a href="https://www.youtube.com/playlist?list=WL" class="links"><img src="Images/watch-later.PNG" alt="">watch leater</a>
+        <a href="https://www.youtube.com/playlist?list=LL" class="links"><img src="Images/liked video.PNG" alt="">like video</a>
+
+        <hr class="seperator">
+        <p class="links" style="font-size: 16px;">Subscriptions</p>
+        <a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ" class="linkss"><img src="https://yt3.ggpht.com/vCqmJ7cdUYpvR0bqLpWIe8ktaor4QafQLlfQyTuZy-M9W_YafT8Wo9kdsKL2St1BrkMRpVSJgA=s88-c-k-c0x00ffffff-no-rj" alt="">Music</a>
+        <a href="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw" class="linkss"><img src="https://yt3.ggpht.com/mUhuJiCiL8jf0Ngf9sh7BFBZCO0MUL2JyH_5ElHbV2fd13hxZ9zQ3-x-YePA_-PCUUH360G0=s88-c-k-c0x00ffffff-no-rj" alt="">Sports</a>
+        <a href="https://www.youtube.com/gaming" class="linkss"><img src="https://yt3.ggpht.com/pzvUHajbQDLDt63gKFYUX445k3VprUs8CeJFpNTxGQZlk0grOSkAqU8Th1_C97dyYM3nENgjbw=s88-c-k-c0x00ffffff-no-rj" alt="">Gaming</a>
+        <a href="https://www.youtube.com/channel/UClgRkhTL3_hImCAmdLfDE4g" class="linkss"><img src="https://yt3.ggpht.com/CctvYaAE8uFnSs-l3yRC8LdvGnXkh-wkj1szh09g2AroR-NMeWJI_eIJCEHJd6oGGaBmG-YB=s88-c-k-c0x00ffffff-no-rj" alt="">Movies</a>
+    </div>
+
+    <!-- filters -->
+    <div class="filters">
+        <button id="searchButton" onclick="searchTrending()" class="filter-options active">all</button>
+        <button id="searchButton" onclick="searchTrending()" class="filter-options">CSS</button>
+        <button id="searchButton" onclick="searchTrending()" class="filter-options">web development</button>
+        <button id="searchButton" onclick="searchTrending()" class="filter-options">python</button>
+        <button id="searchButton" onclick="searchTrending()" class="filter-options">entertainment</button>
+        <button id="searchButton" onclick="searchTrending()" class="filter-options">marvel</button>
+        <button id="searchButton" onclick="searchTrending()" class="filter-options">javascript</button>
+        <button id="searchButton" onclick="searchTrending()" class="filter-options">artificial intelligence</button>
+        <button id="searchButton" onclick="searchTrending()" class="filter-options">machine learning</button>
+        <button id="searchButton" onclick="searchTrending()" class="filter-options">trending</button>
+    </div>
+    <!-- videos -->
+    <div class="home-page-container">
+   
+    </div>
+    <div id="serach-video-container">
+      
+    </div>
+    <script src="https://apis.google.com/js/api.js"></script>
+    
+  
+    <script src="js/index.js"></script>
+    <script src="script.js"></script>
+    <script src="js/individual_video.js"></script>
+</body>
+</html>
